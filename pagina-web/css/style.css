@@ -178,12 +178,12 @@ header label{
 }
 
 .detalles .caja-contenedor .caja img{
-    height: 15rem;
+    height: 20rem;
     border-radius: .5rem;
 }
 
 .detalles .caja-contenedor .caja h3{
-    font-size: 2rem;
+    font-size: 1.7rem;
     color: #333;
     padding-top: 1rem;
 }
@@ -236,6 +236,48 @@ header label{
     margin-left: 2rem;
 }
 
+.body-card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.body-card .card{
+    width: 25rem;
+    height: 35rem;
+    margin: 1rem;
+}
+
+.body-card .card .face{
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 1rem;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.body-card .card .face .front{
+    transform: perspective(60rem) rotateY(0deg);
+    box-shadow: 0 .5rem 1rem #333;
+}
+
+.body-card .card .face .front img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.body-card .card .face .front h3{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 4.5rem;
+    line-height: 4.5rem;
+    color: #fff;
+}
+
 /*media query*/
 
 @media(max-widht:1500px){
@@ -249,6 +291,16 @@ header label{
         padding: 0 3%;
         padding-top: 7.5rem;
         padding-bottom: 2rem;
+    }
+
+    .body-card{
+        flex-wrap: wrap;
+    }
+
+    .body-card .card{
+        width: 25rem;
+        height: 35rem;
+        margin: 3.5rem;
     }
 }
 
@@ -312,6 +364,16 @@ header label{
     .acerca_de{
         background-position: right;
     }
+
+    .body-card{
+        flex-wrap: wrap;
+    }
+
+    .body-card .card{
+        width: 25rem;
+        height: 35rem;
+        margin: 3.5rem;
+    }
 }
 
 @media(max-width:450px){
@@ -326,5 +388,15 @@ header label{
 
     .acerca_de .columna .content bottons a:last-child{
         margin: 1rem 0;
+    }
+
+    .body-card{
+        flex-wrap: wrap;
+    }
+
+    .body-card .card{
+        width: 25rem;
+        height: 35rem;
+        margin: 3.5rem;
     }
 }
