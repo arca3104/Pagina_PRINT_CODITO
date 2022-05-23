@@ -160,7 +160,7 @@ header label{
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-wrap: wrap;
+
 }
 
 
@@ -170,11 +170,12 @@ header label{
     border-radius: .5rem;
     border: .1rem solid rgba(0, 0, 0, .1);
     box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2);
-    margin: 1.5rem;
+    margin: 1rem;
     padding: 3rem 2rem;
     border-radius: .5rem;
     text-align: center;
     transition: .2s linear;
+    height: 53rem;
 }
 
 .detalles .caja-contenedor .caja img{
@@ -278,6 +279,190 @@ header label{
     color: #fff;
 }
 
+.precios .caja-contenedor{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.precios .caja-contenedor .caja{
+    flex: 1 1 28rem;
+    margin: 1rem;
+    padding: 1rem;
+    background: white;
+    border: .1rem solid rgba(0, 0, 0, .2);
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+    border-radius: .5rem;
+    text-align: center;
+    padding-bottom: 3rem;
+    height: 60rem;
+}
+
+.precios .caja-contenedor .caja:nth-child(1), .precios .caja-contenedor .caja:hover{
+    border: .2rem solid var(--third-color);
+}
+
+.precios .caja-contenedor .caja .titulo{
+    color: var(--third-color);
+    font-size: 2.5rem;
+    padding-top: 1rem;
+}
+
+.precios .caja-contenedor .caja .tipos{
+    font-size: 4rem;
+    color: var(--second-color);
+    padding: 1rem 0;
+}
+
+.precios .caja-contenedor .caja .tipos span{
+    font-size: 2rem;
+}
+
+.precios .caja-contenedor .caja ul{
+    padding: 1rem 0;
+    list-style: none;
+}
+
+.precios .caja-contenedor .caja ul li{
+    font-size: 1.7rem;
+    color: #333;
+    padding: .5rem 0;
+}
+
+.precios .caja-contenedor .caja ul li .fa-check{
+    color: lightgreen;
+}
+
+.contactos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-bottom: 4rem;
+}
+
+.contactos .image{
+    flex: 1 1 40rem;
+}
+
+.contactos .image img{
+    width: 100%;
+    padding: 2rem;
+}
+
+.contactos form{
+    flex: 1 1 40rem;
+    padding: 2rem 3rem;
+    border: .1rem solid rgba(0, 0, 0, .2);
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+    border-radius: .5rem;
+    background: white;
+}
+
+.contactos .heading{
+    text-align: center;
+    padding: 0;
+    padding-bottom: 2rem;
+}
+
+
+.contactos form .inputcaja input, .contactos form .inputcaja textarea{
+    width: 100%;
+    background: none;
+    color: #333;
+    margin: 1rem 0;
+    padding: .5rem 0;
+    font-size: 1rem;
+    border-bottom: .1rem solid rgba(0, 0, 0, .1);
+    text-transform: none;
+    border-radius: .5rem;
+}
+
+.contactos form .inputcaja textarea{
+    resize: none;
+    height: 13rem;
+}
+
+footer{
+    padding-top: 4rem;
+    background: url(../access/footer-fondo.png);
+    background-size: cover;
+    background-position: center;
+}
+
+footer .caja-contenedor{
+    display: flex;
+    flex-wrap: wrap;
+    background: none;
+}
+
+footer .caja-contenedor .caja{
+    flex: 1 1 25rem;
+    margin: .5rem;
+    background: none;
+}
+
+footer .caja-contenedor .caja h3{
+    font-size: 2.5rem;
+    padding: 1rem 0;
+    color: var(--primary-color);
+    text-decoration: underline;
+    text-underline-offset: 1rem;
+    background: none;
+}
+
+footer .caja-contenedor .caja p{
+    padding: .5rem 0;
+    font-size: 1.5rem;
+    color: var(--second-color);
+    background: none;
+}
+
+footer .caja-contenedor .caja a{
+    display: block;
+    font-size: 1.5rem;
+    padding: .5rem 0;
+    color: white;
+    background: none;
+}
+
+footer .caja-contenedor .caja a:hover{
+    text-decoration: underline;
+}
+
+footer .caja-contenedor .caja .info{
+    display: flex;
+    align-items: center;
+    background: none;
+}
+
+footer .caja-contenedor .caja .info i{
+    margin: .5rem 0;
+    margin-right: 1rem;
+    border-radius: 50%;
+    background-color: whitesmoke;
+    color: var(--primary-color);
+    font-size: 1.5rem;
+    height: 4.5rem;
+    width: 4.5rem;
+    line-height: 4.5rem;
+    text-align: center;
+    background: none;
+}
+
+footer .creditos{
+    font-size: 2rem;
+    font-weight: normal;
+    letter-spacing: .1rem;
+    color: var(--primary-color);
+    border-top: .1rem solid var(--third-color);
+    padding: 2.5rem 1rem;
+    text-align: center;
+    background: none;
+}
+
+
+
 /*media query*/
 
 @media(max-widht:1500px){
@@ -301,6 +486,14 @@ header label{
         width: 25rem;
         height: 35rem;
         margin: 3.5rem;
+    }
+
+    .precios .caja-contenedor{
+        flex-wrap: wrap;
+    }
+
+    .detalles .caja-contenedor{
+        flex-wrap: wrap;
     }
 }
 
