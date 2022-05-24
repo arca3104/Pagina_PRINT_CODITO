@@ -110,6 +110,18 @@ header label{
     width: 45vw;
 }
 
+.inicio .image .imagen-programatica{
+    width: 55vw;
+}
+
+.imagen-app{
+    width: 40vw;
+}
+
+.education{
+    width: 35vw;
+}
+
 .inicio .content h3{
     font-size: 5rem;
     color: #333;
@@ -461,7 +473,30 @@ footer .creditos{
     background: none;
 }
 
+.slider-contenedor{
+    margin: auto;
+    width: 100%;
+    padding: 3rem;
+}
 
+.slider-contenedor ul, li{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.slider{
+    width: 80rem;
+    height: 30rem;
+}
+
+ul .slider .li{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: inherit;
+    height: inherit;
+}
 
 /*media query*/
 
