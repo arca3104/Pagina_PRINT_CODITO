@@ -473,30 +473,6 @@ footer .creditos{
     background: none;
 }
 
-.slider-contenedor{
-    margin: auto;
-    width: 100%;
-    padding: 3rem;
-}
-
-.slider-contenedor ul, li{
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
-
-.slider{
-    width: 80rem;
-    height: 30rem;
-}
-
-ul .slider .li{
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: inherit;
-    height: inherit;
-}
 
 /*media query*/
 
