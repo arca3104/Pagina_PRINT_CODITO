@@ -316,10 +316,10 @@ header label{
 }
 
 .body-card .container-slider .box > span{
-    font-size: 35px;
+    font-size: 5px;
     display: block;
     text-align: center;
-    height: 9vh;
+    height: 5vh;
     line-height: 2.3;
 }
 
