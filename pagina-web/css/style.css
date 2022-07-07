@@ -494,6 +494,8 @@ footer .caja-contenedor{
     display: flex;
     flex-wrap: wrap;
     background: none;
+    max-width: 1490px;
+    margin: auto;
 }
 
 footer .caja-contenedor .caja{
