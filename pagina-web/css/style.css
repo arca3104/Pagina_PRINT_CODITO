@@ -357,10 +357,10 @@ header label{
 }
 
 .body-card .container-slider .box > span{
-    font-size: 5px;
+    font-size: 30px;
     display: block;
     text-align: center;
-    height: 5vh;
+    height: 7vh;
     line-height: 2.3;
 }
 
@@ -485,7 +485,7 @@ header label{
 
 footer{
     padding-top: 4rem;
-    background: url(../access/footer-fondo.png);
+    background: url(../assets/footer-fondo.png);
     background-size: cover;
     background-position: center;
 }
@@ -494,6 +494,8 @@ footer .caja-contenedor{
     display: flex;
     flex-wrap: wrap;
     background: none;
+    max-width: 1490px;
+    margin: auto;
 }
 
 footer .caja-contenedor .caja{
